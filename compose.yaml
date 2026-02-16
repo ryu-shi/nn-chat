@@ -7,6 +7,14 @@ services:
     volumes:
       - .:/app
       - node_modules:/app/node_modules
-
+  db:
+    image: postgres:16.1
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: nn_chat
+      TZ: Asia/Tokyo
+    
 volumes:
   node_modules:
+  

@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "prisma": "5.13.0",
     "pug": "3.0.3"
   }
 }
